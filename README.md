@@ -2,7 +2,7 @@
 A machine learning model about conspiracy theory beliefs.
 
 ## Our Team Communication Protocols
-Team Conspiracy has established a collaboration plan to include meetings, communication platforms and in case of an emergency.
+The Lizard Team has established a collaboration plan to include meetings, communication platforms and in case of an emergency.
 
 ### MEETINGS
 **SCHEDULED via ZOOM**
