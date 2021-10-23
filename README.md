@@ -16,7 +16,7 @@ This dataset was derived from the Generic Conspiracist Beliefs Scale (GCBS) whic
 |Personal Wellbeing|PW|
 |Control of Information|CI|
 
-Other characteristics of the repondants were also captured:
+Other characteristics of the respondants were also captured:
 * **Education**: Less than high school, high school, university degree, graduate degree
 * **Childhood Living**: Urban, Rural, Suburban
 * **Gender**: Male, Female, Other
@@ -34,29 +34,37 @@ Other characteristics of the repondants were also captured:
 ## Outline of Project
 1. Identify the datasource
     - Link: ["Measuring Belief In Conspiracy Theories"](https://www.kaggle.com/yamqwe/measuring-belief-in-conspiracy-theories?select=data)
-    - Description: Collected in 2016 using an online verion of the Generic Conspiracists Beliefs Scale. This dataset includes responses from roughly 2,495 individuals. The questionnaire categorizes individuals into types of conspiracy theorists based on their reponses. In addition, features of the individuals are also collected where a machine learning model can be applied to predict whether a person is a conspiracy theorist and what type.
+    - Description: Collected in 2016 using an online version of the Generic Conspiracists Beliefs Scale. This dataset includes responses from roughly 2,495 individuals. The questionnaire categorizes individuals into types of conspiracy theorists based on their responses. In addition, features of the individuals are also collected where a machine learning model can be applied to predict whether a person is a conspiracy theorist and what type.
 
 2. Topic Decision
     - We decided this predictive approach to identifying conspiracy theorists based on individual features would be an interesting approach to machine learning, especially given the increased global discussion surrounding conspiracies over the last five years.
 
 3. What Do We Want To Answer?
-    - Based on your own personal features, what type of conspiracy theorist are you?
+    - Based on your own personal features, what type(s) of conspiracy theorist are you?
 
 4. Dataset Limitations
     - Data is from 2016 and does not factor additional theories which have emerged since then: i.e. COVID-19.
     
 5. Recommendations for expanded analysis
-    - Perform this questionnaire with a population and collect where they live at the time of taking the survey.
+    - Perform this questionnaire with a population and collect where they live at the time of taking the survey. A map showing where certain types of conspiracies are more prevalent would be highly interesting.
 
 
 ## Data Exploration
   - The csv file was imported into a Pandas DataFrame
   - Dropped null data from dataset
-  - Removed unnecessary data (personality, time elapsed, major, and vocabulary assessment) 
+  - Removed unnecessary data:
+    - Personality Indicators - the results of these did lend itself to a better assessment and inserted additional ambiguity
+    - Time (introelapse, testelapse, surveyelapse) - time spent on the page and between the two sets of questions are not relevant
+    - Major - Not necessary for prediction as all did not complete college
+    - Vocabulary Assessment - more of a lazy aptitude test and not relevant when academic profile are captured
+  - Binned data for overall assessment of Yes/No for conspiracy theorist
+  - Removed outliers - the following images display the outliers in two features
+    - Age: One individual indicated they were nearly 35,000 years old while another was over 5,000 years old
+    - Family Size: One individual stated their mother had nearly 100 children
 
-
+<img  src="images/Age_boxplot.png" width="400" height="400"/> <img src="images/Family_size_boxplot.png" width="400" height="400"/> 
 ## Analysis 
-
+  - More to come here
 
 ## Google Slide Presentation Link
 [The Lizard People](https://docs.google.com/presentation/d/1Yfqv1jFfF3fEBV6npjox3hcjP84kX47o3FywaWDZ9HI/edit#slide=id.gf9adcef9b2_0_124)
