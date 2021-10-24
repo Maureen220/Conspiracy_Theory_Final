@@ -64,7 +64,15 @@ Other characteristics of the respondants were also captured:
 
 <img  src="images/Age_boxplot.png" width="400" height="400"/> <img src="images/Family_size_boxplot.png" width="400" height="400"/> 
 ## Analysis 
-  - More to come here
+In reviewing the various factors from the people who took the survey, we decided it would be useful to look at a correlation matrix. We quickly realized a majority of the factors do not have a correlation at all. The only ones with someonwhat of a correlation were the following which had a positive correlation: 
+* Age & Education
+* Married & Age
+
+<img  src="images/Correlation_matrix_1.png"/>
+
+Our database contains the users and their features as the fact table. We have five dimention tables which calculate the average score for each of the five conspiracy theory types.
+
+<img  src="images/ERD.png"/>
 
 ## Google Slide Presentation Link
 [The Lizard People](https://docs.google.com/presentation/d/1Yfqv1jFfF3fEBV6npjox3hcjP84kX47o3FywaWDZ9HI/edit#slide=id.gf9adcef9b2_0_124)
