@@ -70,7 +70,7 @@ In reviewing the various factors from the people who took the survey, we decided
 
 <img  src="images/Correlation_matrix_1.png"/>
 
-Our database contains the users and their features as the fact table. We have five dimention tables which calculate the average score for each of the five conspiracy theory types.
+Our database contains the users and their features as the fact table. We have five dimension tables which calculate the average score for each of the five conspiracy theory types.
 
 <img  src="images/ERD.png"/>
 
