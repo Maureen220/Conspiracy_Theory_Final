@@ -62,13 +62,16 @@ Other characteristics of the respondants were also captured:
     - Age: One individual indicated they were nearly 35,000 years old while another was over 5,000 years old
     - Family Size: One individual stated their mother had nearly 100 children
 
-<img  src="images/Age_boxplot.png" width="400" height="400"/> <img src="images/Family_size_boxplot.png" width="400" height="400"/> 
+<table><tr><td><img  src="images/Age_boxplot.png" width="400" height="400"/><img src="images/Family_size_boxplot.png" width="400" height="400"/></td></tr></table> 
 ## Analysis 
 In reviewing the various factors from the people who took the survey, we decided it would be useful to look at a correlation matrix. We quickly realized a majority of the factors do not have a correlation at all. The only ones with someonwhat of a correlation were the following which had a positive correlation: 
 * Age & Education
 * Married & Age
 
-<img  src="images/Correlation_matrix_1.png"/>
+In addition, religion has the highest correlation to the overall scores for conspiracy theorists.
+<table><tr><td>
+    <img  src="images/Correlation_matrix_1.png"/>
+</td></tr></table>
 
 Our database contains the users and their features as the fact table. We have five dimention tables which calculate the average score for each of the five conspiracy theory types.
 
