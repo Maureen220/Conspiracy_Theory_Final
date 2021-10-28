@@ -64,13 +64,20 @@ Other characteristics of the respondants were also captured:
 
 <img  src="images/Age_boxplot.png" width="400" height="400"/> <img src="images/Family_size_boxplot.png" width="400" height="400"/> 
 ## Analysis 
-In reviewing the various factors from the people who took the survey, we decided it would be useful to look at a correlation matrix. We quickly realized a majority of the factors do not have a correlation at all with the overall total scores. The following correlation matrix shows Religion and Gender having the most correlation to total scores, though small.
+In reviewing the various factors from the people who took the survey, we decided it would be useful to look at a correlation matrix. We quickly realized a majority of the factors do not have a correlation at all with the overall total scores. The following correlation matrix shows **Religion** and **Gender** having the most correlation to total scores, though small.
 
 <img  src="images/Correlation_matrix_1.png"/>
 
-For Religion, this chart shows the total scores of each conspiracy theory for each type of religion.
+### RELIGION
+This chart shows the total scores of each conspiracy theory for each type of religion. The order of most to least in total scores by religion is nearly identical for each theory. Only the top two categories of religion, Atheist and Agnostic alternate in them.
 
 <img  src="images/Religion.png"/>
+
+### GENDER
+For the purposes of displaying the data, "Other" was removed as their scores were nominal. Comparing Male to Female, the numbers are similar though not identical. Males led in three theories while Females led in two.
+<p align="center">
+<img  src="images/Gender.png" width="400" height="600"/>
+</p>
 
 Our database contains the users and their features as the fact table. We have five dimension tables which calculate the average score for each of the five conspiracy theory types.
 
