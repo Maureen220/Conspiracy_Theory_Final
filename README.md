@@ -69,7 +69,7 @@ In reviewing the various factors from the people who took the survey, we decided
 <img  src="images/Correlation_matrix_1.png"/>
 
 ### RELIGION
-This chart shows the total scores of each conspiracy theory for each type of religion. The order of most to least in total scores by religion is nearly identical for each theory. Only the top two categories of religion, Atheist and Agnostic alternate in them.
+These charts show the average scores of each conspiracy theory for each type of religion. The size of the bubbles indicate how many of the respondants identified with that particular religion. The scale was based on the average scores for each conspiracy theory as well as the overall scores.
 
 <img  src="images/Religion.png"/>
 
