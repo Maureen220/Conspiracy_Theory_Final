@@ -79,7 +79,7 @@ For the purposes of displaying the data, "Other" was removed as their scores wer
 <img  src="images/Gender.png" width="400" height="600"/>
 </p>
 
-Our database contains the users and their features as the fact table. We have five dimension tables which calculate the average score for each of the five conspiracy theory types.
+Our database contains the five types of theorists as tables with the associated features of the those who fell into the category. In addition, we have a roll up table with the total scores for those users.
 
 <img  src="images/ERD.png"/>
 
