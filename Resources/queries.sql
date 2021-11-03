@@ -7,18 +7,18 @@ SELECT ts.totalscore,
 	gm.government_malfeasance, 
 	pw.personal_wellbeing, 
 	co.control_of_info, 
-	co.education, 
-	co.urban, 
-	co.gender, 
-	co.engnat, 
-	co.age, 
-	co.hand, 
-	co.religion, 
-	co.orientation, 
-	co.race,
-	co.voted, 
-	co.married, 
-	co.familysize
+	ts.education, 
+	ts.urban, 
+	ts.gender, 
+	ts.engnat, 
+	ts.age, 
+	ts.hand, 
+	ts.religion, 
+	ts.orientation, 
+	ts.race,
+	ts.voted, 
+	ts.married, 
+	ts.familysize
 INTO all_combined_table
 FROM control_of_info as co
 LEFT JOIN total_score as ts
@@ -35,18 +35,18 @@ LEFT JOIN personal_wellbeing as pw
 --combining the control_of_info and total_score tables
 SELECT ts.totalscore,
 	co.control_of_info, 
-	co.education, 
-	co.urban, 
-	co.gender, 
-	co.engnat, 
-	co.age, 
-	co.hand, 
-	co.religion, 
-	co.orientation, 
-	co.race,
-	co.voted, 
-	co.married, 
-	co.familysize
+	ts.education, 
+	ts.urban, 
+	ts.gender, 
+	ts.engnat, 
+	ts.age, 
+	ts.hand, 
+	ts.religion, 
+	ts.orientation, 
+	ts.race,
+	ts.voted, 
+	ts.married, 
+	ts.familysize
 INTO control_totalscore_table
 FROM control_of_info as co
 LEFT JOIN total_score as ts
@@ -57,18 +57,18 @@ DROP TABLE control_totalscore_table;
 --combining the et (extreaterrestrial) and total_score tables
 SELECT ts.totalscore,
 	et.et, 
-	et.education, 
-	et.urban, 
-	et.gender, 
-	et.engnat, 
-	et.age, 
-	et.hand, 
-	et.religion, 
-	et.orientation, 
-	et.race,
-	et.voted, 
-	et.married, 
-	et.familysize
+	ts.education, 
+	ts.urban, 
+	ts.gender, 
+	ts.engnat, 
+	ts.age, 
+	ts.hand, 
+	ts.religion, 
+	ts.orientation, 
+	ts.race,
+	ts.voted, 
+	ts.married, 
+	ts.familysize
 INTO et_totalscore_table
 FROM et as et
 LEFT JOIN total_score as ts
@@ -79,18 +79,18 @@ DROP TABLE et_totalscore_table;
 --combining the global_conspiracies and total_score tables
 SELECT ts.totalscore,
 	gs.global_conspiracies, 
-	gs.education, 
-	gs.urban, 
-	gs.gender, 
-	gs.engnat, 
-	gs.age, 
-	gs.hand, 
-	gs.religion, 
-	gs.orientation, 
-	gs.race,
-	gs.voted, 
-	gs.married, 
-	gs.familysize
+	ts.education, 
+	ts.urban, 
+	ts.gender, 
+	ts.engnat, 
+	ts.age, 
+	ts.hand, 
+	ts.religion, 
+	ts.orientation, 
+	ts.race,
+	ts.voted, 
+	ts.married, 
+	ts.familysize
 INTO gs_totalscore_table
 FROM global_conspiracies as gs
 LEFT JOIN total_score as ts
@@ -101,18 +101,18 @@ DROP TABLE gs_totalscore_table;
 --combining the government_malfeasance and total_score tables
 SELECT ts.totalscore,
 	gm.global_conspiracies, 
-	gm.education, 
-	gm.urban, 
-	gm.gender, 
-	gm.engnat, 
-	gm.age, 
-	gm.hand, 
-	gm.religion, 
-	gm.orientation, 
-	gm.race,
-	gm.voted, 
-	gm.married, 
-	gm.familysize
+	ts.education, 
+	ts.urban, 
+	ts.gender, 
+	ts.engnat, 
+	ts.age, 
+	ts.hand, 
+	ts.religion, 
+	ts.orientation, 
+	ts.race,
+	ts.voted, 
+	ts.married, 
+	ts.familysize
 INTO gm_totalscore_table
 FROM government_malfeasance as gm
 LEFT JOIN total_score as ts
@@ -122,19 +122,19 @@ DROP TABLE gm_totalscore_table;
 
 --combining the personal_wellbeing and total_score tables
 SELECT ts.totalscore,
-	pw.global_conspiracies, 
-	pw.education, 
-	pw.urban, 
-	pw.gender, 
-	pw.engnat, 
-	pw.age, 
-	pw.hand, 
-	pw.religion, 
-	pw.orientation, 
-	pw.race,
-	pw.voted, 
-	pw.married, 
-	pw.familysize
+	pw.personal_wellbeing, 
+	ts.education, 
+	ts.urban, 
+	ts.gender, 
+	ts.engnat, 
+	ts.age, 
+	ts.hand, 
+	ts.religion, 
+	ts.orientation, 
+	ts.race,
+	ts.voted, 
+	ts.married, 
+	ts.familysize
 INTO pw_totalscore_table
 FROM personal_wellbeing as pw
 LEFT JOIN total_score as ts
