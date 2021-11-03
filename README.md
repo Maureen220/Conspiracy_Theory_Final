@@ -29,7 +29,6 @@ Other characteristics of the respondants were also captured:
 * **Voted in National Election in Past Year**: Yes, No
 * **Married**: Never Married, Currently Married, Previously Married
 * **Family Size**: Enter the number of children your mother had, including yourself
-* **Major**: If you attended university, enter your major
 
 ## Outline of Project
 1. Identify the datasource
