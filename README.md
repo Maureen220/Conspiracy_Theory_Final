@@ -79,7 +79,10 @@ For the purposes of displaying the data, "Other" was removed as their scores wer
 <img  src="images/Gender.png" width="400" height="600"/>
 </p>
 
-Our database contains the five types of theorists as tables with the associated features of the those who fell into the category. In addition, we have a roll up table with the total scores for those users.
+Our database contains a main table (total_scores) which captures the features of each person who took the survey as well as their total scores. The user_id is the primary key in this table. The user_id is then used as the foreign key to the theorist-type tables. This allows for the following benefits:
+* Quick retrieval of data
+* Mitigating redundant data in child tables
+* Preserving data integrity by having the features of each person stored once
 
 <img  src="images/ERD.png"/>
 
