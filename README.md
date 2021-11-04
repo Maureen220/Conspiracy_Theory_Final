@@ -75,9 +75,10 @@ These charts show the average scores of each conspiracy theory for each type of 
 ### GENDER
 For the purposes of displaying the data, "Other" was removed as their scores were nominal. Comparing Male to Female, the numbers are similar though not identical. Males led in three theories while Females led in two.
 <p align="center">
-<img  src="images/Gender.png" width="400" height="600"/>
+<img  src="images/Gender.png" width="1000" height="140"/>
 </p>
 
+### ERD
 Our database contains a main table (total_scores) which captures the features of each person who took the survey as well as their total scores. The user_id is the primary key in this table. The user_id is then used as the foreign key to the theorist-type tables. This allows for the following benefits:
 * Quick retrieval of data
 * Mitigating redundant data in child tables
