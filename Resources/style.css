@@ -1,0 +1,200 @@
+body {
+    color: #f7f7f7;
+  }
+  
+  .jumbotron {
+    background-image: url("/images/snake.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    border-radius: 20px;
+    height: 210px;
+    width: 1100px;
+  }
+  
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+  }
+  
+  /* Media */
+  
+  img {
+    border-radius: 5%;
+  }
+  
+  #dummy {
+    width: 100%;
+  }
+  
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  
+  img {
+    border-radius: 8px;
+    max-width: 118%;
+    height: auto;
+  }
+  
+  audio {
+    width: 16em;
+    height: 18px;
+  }
+  
+  /* Headings */
+  
+  h1 {
+    text-shadow: 8px 8px 10px black;
+    font-family: American Typewriter;
+    font-family: American Typewriter;
+    font-size: 90px;
+    color: black;
+  }
+  
+  h2 {
+    text-shadow: 8px 8px 10px yellow;
+    font-family: American Typewriter;
+    text-align: center;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  h5 {
+    color: grey;
+  }
+  
+  h6 {
+    font-family: fantasy;
+  }
+  
+  /* Text Selectors */
+  
+  p {
+    text-align: center;
+    color: black;
+    font-family: American Typewriter;
+  }
+  
+  i {
+    font-size: 10px;
+    font-style: italic;
+    color: burlywood;
+  }
+  
+  /* Form Element */
+  
+  input[type="text"] {
+    border: 2px solid rgb(2, 2, 34);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    width: 250px;
+  }
+  
+  select {
+    font-style: italic;
+    font-size: 14px;
+    width: 14em;
+  }
+  
+  label {
+    font-size: 20px;
+    color: yellow;
+  }
+  
+  #reset {
+    width: 10em;
+    height: 2em;
+    font-size: 10px;
+    float: none;
+    border-radius: 20px;
+    background-color: gray;
+  }
+  
+  button {
+    font-size: 25px;
+  }
+  
+  #predict {
+    width: 11.5em;
+    height: 4em;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 20px;
+    float: none;
+    background-color: orange;
+    font-weight: 700;
+    box-shadow: 1px 2px black;
+  }
+  
+  #prediction {
+    text-shadow: 8px 8px 10px black;
+  }
+  
+  .responsive-google-slides {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .responsive-google-slides iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  /* Misc */
+  
+  ul {
+    color: greenyellow;
+    font-family: fantasy;
+    font-size: 16px;
+  }
+  
+  li {
+    font-family: courier;
+    text-align: center;
+  }
+  
+  #polaroid {
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: darkred;
+  }
+  
+  /* Custom */
+  
+  .wrapper {
+    display: flex;
+    height: auto;
+    justify-content: center;
+  }
+  
+  #instructions {
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  #test {
+    font-family: fantasy;
+  }
+  
+  #description {
+    font-family: fantasy;
+  }
+  
+  #learn {
+    text-shadow: 8px 8px 10px orange;
+  }
+  
