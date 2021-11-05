@@ -7,8 +7,8 @@
     <title>A Machine Learning Model on Conspiracy Theories </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
-    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <link rel="stylesheet" href="../static/css/style.css">
 
     <!-- jquery script for prediction button -->
 
@@ -16,20 +16,20 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- scroll-lock for title through the jumbotron -->
-
 </head>
 
-<body class="text-light bg-dark">
-    
+<!-- <body class="text-light bg-dark"> -->
+<body>   
         <div class="jumbotron specialjum">
-            <h1 class="display-4" >Are you a Conspiracy Theorist?</h1>
+            <h1 class="display-1" >Are you a Conspiracy Theorist?</h1>
             <p class="lead">Determining an outcome through the use of machine learning</p>
-            <a href="#" class="button">PREDICT YOURSELF</a>
+            <br></br>
+            <button class="button button1">PREDICT YOURSELF</button>
+            <!-- <a href="#" class="button">PREDICT YOURSELF</a> -->
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <br><br><br><br>
+                <br><br>
                 <!-- Google slideshow - responsive elements in CSS -->
                 <div class="responsive-google-slides">
                   <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTdHJkogkY0tkdhV5SOKJmvHHzPQuNlN87-csbSyKG60HBrvzUO13uedlbzxgoCYOaXXlT9pBVvUh5g/embed?start=false&loop=false&delayms=3000" 
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div id="description" class="col-sm-6">
-                <br><br>
+                <br></br>
                 <a> Background of Data:</a><br><br>
                 <ul>
                     <li>The Generic Conspiracist Beliefs Scale (GCBS) was created for use in researching conspiracy theories. Research had typically measures beliefs in conspiracies by asking questions about specific conspiracy theories. The GCBS attempts to correct problems with this approach by asking broad questions about assumption that are presumed to underlie such beliefs. The GCBS measures an overall score and five facet scores. The scale was developed by Robert Brotherton, Christopher C. French and Alan D. Pickering of Goldsmiths University of London in 2013.</li>
@@ -272,7 +272,7 @@
                         <!-- adding Polaroid effect to the dummy & prediction result-->
 
                         <div id="polaroid" class="polaroid">
-                            <img id="dummy" src="static/images/aliens.gif">
+                            <img id="dummy" src="../static/images/aliens.gif">
                             <div class="container">
                                 <h2 id="prediction">{{ prediction }}</h2>
                             </div>
@@ -285,6 +285,7 @@
     </div>
     <h3 id="learn">Would you like to learn more about the (GCB) Generic Conspiracisy Beliefs Scale?</h3>
     <h3><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00279/full">* Visit the Original Research Article to Learn More *</a></h3>
+    
     <!-- prediction result without refreshing the entire page -->
 
     <script>
@@ -307,8 +308,12 @@
     </script>
     </div>
 
-    <!-- Link to JS file-->
-    <script type="text/javascript" src="../static/js/app.js"></script>
+    <!-- Link to JS file, d3, and plotly-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../static/js/app.js"></script>
+    <script src="../static/css/style.css"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 </body>
 
