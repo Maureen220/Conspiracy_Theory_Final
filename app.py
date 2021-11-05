@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", prediction= "static/images/mind_control.gif")
+    return render_template("index.html", prediction= "static/images/aliens.gif")
 
 
 @app.route("/predict", methods=["post"])

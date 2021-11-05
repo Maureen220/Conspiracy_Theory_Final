@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    
 
     <!-- jquery script for prediction button -->
 
@@ -20,17 +21,11 @@
 </head>
 
 <body class="text-light bg-dark">
-    <div class="container">
-        <div class="sticky">
-            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
-                    Final Project - Team Lizard People
-                </a>
-            </nav>
-        </div>
-        <div class="jumbotron">
-            <h1 class="display-4" >Are you a Conspiracy Theorist???</h1>
+    
+        <div class="jumbotron specialjum">
+            <h1 class="display-4" >Are you a Conspiracy Theorist?</h1>
             <p class="lead">Determining an outcome through the use of machine learning</p>
+            <a href="#" class="button">PREDICT YOURSELF</a>
         </div>
         <div class="row">
             <div class="col-sm-6">
@@ -311,6 +306,10 @@
         refresh()
     </script>
     </div>
+
+    <!-- Link to JS file-->
+    <script type="text/javascript" src="../static/js/app.js"></script>
+
 </body>
 
 </html>
