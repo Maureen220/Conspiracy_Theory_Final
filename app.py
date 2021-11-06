@@ -2,26 +2,26 @@ from flask import Flask, render_template, request
 import joblib
 
 app = Flask(__name__)
+model= joblib.load('random_forest.joblib')
 
-@app.route("/", methods=["POST", 'GET'])
+@app.route("/", methods=["GET", 'POST'])
 def index():
     return render_template("index.html") 
 
 
-@app.route("/predict", methods=["POST", 'GET'])
+@app.route("/predict", methods=["GET", 'POST'])
 def predict():
-    if request.method =="POST":
-        print('I posted')
-        # age = request.form.get("age")
-        # print(age)
-        ## SAVE THE MODEL LIBRARY
-        # import joblib
-        # # load, no need to initialize the loaded_rf
-        # loaded_rf = joblib.load(open("random_forest.joblib"))
-        # loaded_pred = loaded_rf.predict
-        # loaded_pred
-        return render_template('predictions.html')
-    return render_template('predictions.html')
+    output = "Your value here!"
+    #If you have the user submit a form
+    if request.method == 'POST': 
+        age = request.form.get("age")
+        religion = request.form.get("religion")
+        print(age)
+        print(religion)
+        output = model(age, religion)
+        return render_template('predictions.html', output=output)
+        
+    return render_template('predictions.html', output=output)
 
 if __name__=="__main__":
     app.run(debug=True)
