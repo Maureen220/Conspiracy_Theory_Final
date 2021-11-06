@@ -1,6 +1,23 @@
-d3.csv("../Resources/cleaned_data_removed_outliers.csv").then(function(data){
-    console.log(data);
-  });
+// d3.csv("../Resources/cleaned_data_removed_outliers.csv").then(function(data){
+//     console.log(data);
+//   });
+
+//   function refresh() {
+//         const prediction_button = document.getElementById("predict");
+//         prediction_button.onclick = function (event) {
+//             event.preventDefault();
+//             $.ajax({
+//                 url: '/predict',
+//                 type: 'post',
+//                 data: $('#selectionForm').serialize(),
+//                 success: function (data) {
+//                     console.log(data)
+//                     $("#prediction").html(data)
+//                 }
+//             });
+//         }
+//     }
+//     refresh()
 
 // // d3.csv("../Resources/cleaned_data_removed_outliers.csv").then(makeChart);
 

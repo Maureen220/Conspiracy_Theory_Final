@@ -26,54 +26,55 @@
         <!-- start of selection & prediction form -->
 
         <div>
-            <form id="selectionForm" class="bg-dark" action="/predict" method="post">
+            <form id="selectionForm" action='/predict' class="bg-dark" method="post">
                 <div class="row">
                     <div class="col-sm-3">
                         <ul class="list-group bg-dark">
 
-                            <label for="Age">Age:</label>
+                            <label for="age">Age:</label>
                             <i>Default value = 13</i>
+                            
+                            <input class=“form-control” list='age' id='age_id' name='age'>
+                                <datalist id="age_input">
+                                    <option selected>Please Make A Selection:</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
 
-                            <select id="occ_pos" name="occ_pos">
-                                <option selected>Please Make A Selection:</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
+                                
 
-                               
+                                </datalist>
+                            <!-- <br><br>
 
-                            </select>
-                            <br><br>
-
-                            <label for="Religion">Religion:</label>
+                            <label for="religion">Religion:</label>
                             <i>Default value = Agnostic</i>
 
-                            <select name="Religion" id="Religion">
+                            <select name="religion" id="religion">
                                 <option selected>Please Make A Selection:</option>
                                 <option value="1">Agnostic</option>
                                 <option value="2">Atheist</option>
@@ -92,7 +93,7 @@
                             </select>
                             <br><br>
 
-                            <label for="Family_size">Family Size:</label>
+                            <label for="fam_size">Family Size:</label>
                             <i>Default value = 1 Child</i>
 
                             <select name="fam_size" id="fam_size">
@@ -122,7 +123,7 @@
                             <label for="gender">Gender:</label>
                             <i>Default value = Male</i>
 
-                            <select name="Gender" id="Gender">
+                            <select name="gender" id="gender">
                                 <option selected>Please Make A Selection:</option>
                                 <option value="1">Male</option>
                                 <option value="2">Female</option>
@@ -131,10 +132,10 @@
                             </select>
                             <br><br>
 
-                            <label for="Education">Education:</label>
+                            <label for="education">Education:</label>
                             <i>Default value = Less than high school</i>
 
-                            <select name="air_bag" id="air_bag">
+                            <select name="education" id="education">
                                 <option selected>Please Make A Selection:</option>
                                 <option value="1">Less than high school</option>
                                 <option value="2">High School</option>
@@ -222,28 +223,29 @@
                                 <option value="2">Currently Married</option>
                                 <option value="3">Previously Married</option>
                             </select>
-                            <br><br>
+                            <br><br> -->
 
                             
                             <!-- predition & reset buttons -->
-                            <input id="predict" type="submit" value="CLICK TO Calculate">
+                            <!-- <input id="predict" type="submit" value="CLICK TO Calculate">
 
                             <input id="reset" type="reset" value="reset selections"
                                 onclick="document.getElementById('prediction').innerText=''">
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3"> -->
 
                         <!-- adding Polaroid effect to the dummy & prediction result-->
 
-                        <div id="polaroid" class="polaroid">
+                        <!-- <div id="polaroid" class="polaroid">
                             <img id="dummy" src="../static/images/aliens.gif">
                             <div class="container">
                                 <h2 id="prediction">{{ prediction }}</h2>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
+                <button type='submit' class='btn btn-info'>Submit</button>
             </form>
         </div>
         <br><br>
@@ -254,22 +256,22 @@
     <!-- prediction result without refreshing the entire page -->
 
     <script>
-        function refresh() {
-            const prediction_button = document.getElementById("predict");
-            prediction_button.onclick = function (event) {
-                event.preventDefault();
-                $.ajax({
-                    url: '/predict',
-                    type: 'post',
-                    data: $('#selectionForm').serialize(),
-                    success: function (data) {
-                        console.log(data)
-                        $("#prediction").html(data)
-                    }
-                });
-            }
-        }
-        refresh()
+        // function refresh() {
+        //     const prediction_button = document.getElementById("predict");
+        //     prediction_button.onclick = function (event) {
+        //         event.preventDefault();
+        //         $.ajax({
+        //             url: '/predict',
+        //             type: 'post',
+        //             data: $('#selectionForm').serialize(),
+        //             success: function (data) {
+        //                 console.log(data)
+        //                 $("#prediction").html(data)
+        //             }
+        //         });
+        //     }
+        // }
+        // refresh()
     </script>
     </div>
 
