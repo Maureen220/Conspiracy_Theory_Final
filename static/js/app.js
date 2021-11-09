@@ -1,38 +1,82 @@
-// d3.csv("../Resources/cleaned_data_removed_outliers.csv").then(function(data){
-//     console.log(data);
-//   });
+function make_pred(){
+    let age= document.getElementById("age").value;
+    let religion= document.getElementById("religion").value;
+    let family_size= document.getElementById("fam_size").value;
+    let urban= document.getElementById("urban").value;
+    let gender= document.getElementById("gender").value;
+    let education= document.getElementById("education").value;
+    let engant= document.getElementById("engant").value;
+    let hand_orientation= document.getElementById("hand_orientation").value;
+    let orientation= document.getElementById("orientation").value;
+    let race= document.getElementById("race").value;
+    let voted= document.getElementById("voted").value;
+    let married= document.getElementById("married").value;
+    console.log("age",age) 
+    console.log("religion",religion)
+    console.log("family_size",family_size)
+    console.log("urban",urban)
+    console.log("gender",gender)
+    console.log("education",education)  
+    console.log("engant",engant)
+    console.log("hand_orientation",hand_orientation)
+    console.log("orientation",orientation)
+    console.log("race",race)
+    console.log("voted",voted)
+    console.log("married",married)
+    fetch("/predict", {
+        method: "POST", 
+        body: JSON.stringify({
+            age: age,
+            religion: religion,
+            family_size: family_size,
+            urban: urban,
+            gender: gender,
+            education: education,
+            engant: engant,
+            hand_orientation: hand_orientation,
+            orientation: orientation, 
+            race: race,
+            voted: voted,
+            married: married
 
-//   function refresh() {
-//         const prediction_button = document.getElementById("predict");
-//         prediction_button.onclick = function (event) {
-//             event.preventDefault();
-//             $.ajax({
-//                 url: '/predict',
-//                 type: 'post',
-//                 data: $('#selectionForm').serialize(),
-//                 success: function (data) {
-//                     console.log(data)
-//                     $("#prediction").html(data)
-//                 }
-//             });
-//         }
-//     }
-//     refresh()
 
-// // d3.csv("../Resources/cleaned_data_removed_outliers.csv").then(makeChart);
 
-// function makeChart(genders){
-//     var male = genders.map(function(d) {return d.gender == 1});
-//     var female = genders.map(function(d) {return d.gender == 2});
-//     var other = genders.map(function(d) {return d.gender == 3});
+        }),
+        headers:{
+            "Content-type":"application/json;charset=UTF-8"
 
-//     var chart = ('chart', {
-//         type: 'bar', 
-//         data: [male, female, other]
+        } 
+    }).then(resp=>{
+        return resp.json()
+    }).then(resp=>{
+        console.log(resp)
+        document.getElementById("prediction").innerHTML=resp.Prediction
+        console.log(resp.Prediction);
+        if (resp.Prediction=="Not"){
+            // alert(document.getElementById("dummy").src);
+            document.getElementById("dummy").src= "/static/images/scully.gif"
+            
+        
+        }
+        else if (resp.Prediction=="GM"){
+            document.getElementById("dummy").src="/static/images/aliens.gif"
+        }
 
-//     })
-// }
+        else if (resp.Prediction=="GM"){
+            document.getElementById("dummy").src="/static/images/alien.gif"
+        }
 
-// // Request data using D3
-// d3.csv("../Resources/cleaned_data_removed_outliers.csv")
-//   .then(makeChart);
+        else if (resp.Prediction=="GM"){
+            document.getElementById("dummy").src="/static/images/alien.gif"
+        }
+
+        else if (resp.Prediction=="GM"){
+            document.getElementById("dummy").src="/static/images/alien.gif"
+        }
+
+        else if (resp.Prediction=="GM"){
+            document.getElementById("dummy").src="/static/images/alien.gif"
+        }
+
+    })
+}

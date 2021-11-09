@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request
 import joblib
+import pandas as pd
 
 app = Flask(__name__)
-model= joblib.load('random_forest.joblib')
 
 @app.route("/", methods=["GET", 'POST'])
 def index():
@@ -28,6 +28,8 @@ def predict():
             voted: voted,
             married: married
 """
+        model= joblib.load('random_forest.joblib')
+        
         age=request.json.get("age")
         religion=request.json.get("religion")
         family_size=request.json.get("family_size")
@@ -40,8 +42,12 @@ def predict():
         race=request.json.get("race")
         voted=request.json.get("voted")
         married=request.json.get("married")
-        pred=model.predict([[education, urban, gender, engant, age, hand_orientation, religion, orientation, race, voted, married, family_size]])
+        columns = ['education', 'urban', 'gender', 'engnat', 'age', 'hand', 'religion', 'orientation', 'race', 'voted', 'married', 'familysize']
+        # test_data = [[education, urban, gender, engant, age, hand_orientation, religion, orientation, race, voted, married, family_size]]
+        test_data = pd.DataFrame([[education, urban, gender, engant, age, hand_orientation, religion, orientation, race, voted, married, family_size]], columns=columns)
+        pred=model.predict(test_data)
 
+        print(test_data)
         print(pred)
         # return render_template('predictions.html', output=output)
         return {"Prediction": pred[0]}

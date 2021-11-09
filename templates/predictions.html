@@ -35,7 +35,7 @@
                             <label for="age">Your Age:</label>
                             <br>
                             <select id="age" name="age" value="13">
-                                <option selected value="13">Please Make A Selection:</option>
+                                <option selected value="19">Please Make A Selection:</option>
                                 <option value="13">13</option>
                                 <option value="14">14</option>
                                 <option value="15">15</option>
@@ -116,7 +116,7 @@
                             <label for="religion">Your Religion:</label>
                             <br>
                             <select name="religion" id="religion" value="1">
-                                <option selected value="1">Please Make A Selection:</option>
+                                <option selected value="12">Please Make A Selection:</option>
                                 <option value="1">Agnostic</option>
                                 <option value="2">Atheist</option>
                                 <option value="3">Buddhist</option>
@@ -141,8 +141,12 @@
                             <label for="family_size">Family Size:</label>
                             <br>
                             <select name="fam_size" id="fam_size" value="1">
-                                <option value="1">Please Make A Selection:</option>
+                                <option value="4">Please Make A Selection:</option>
                                 <option value="1">One Child</option>
+                                <option value="2">Two Child</option>
+                                <option value="3">Three Child</option>
+                                <option value="4">Four Child</option>
+                                <option value="5">Five Child</option>
                             </select>
                         </div>  
                     </div>
@@ -154,8 +158,8 @@
                             <br>
                             <label for="urban">Where you grew up:</label>
                             <br>
-                            <select name="urban" id="urban" value="3">
-                                <option selected value="3">Please Make A Selection:</option>
+                            <select name="urban" id="urban">
+                                <option selected value="1">Please Make A Selection:</option>
                                 <option value="1">Rural</option>
                                 <option value="2">Suburban</option>
                                 <option value="3">Urban</option>
@@ -170,8 +174,8 @@
                             <br>
                             <label for="gender">Your Gender:</label>
                             <br>
-                            <select name="gender" id="gender" value="3">
-                                <option selected value="3">Please Make A Selection:</option>
+                            <select name="gender" id="gender" value="1">
+                                <option selected value="1">Please Make A Selection:</option>
                                 <option value="1">Male</option>
                                 <option value="2">Female</option>
                                 <option value="3">Other</option>
@@ -187,8 +191,8 @@
                             <br>
                             <label for="education">Your Education Level:</label>
                             <br>
-                            <select name="education" id="education" value="1">
-                                <option selected value="1">Please Make A Selection:</option>
+                            <select name="education" id="education">
+                                <option selected value="2">Please Make A Selection:</option>
                                 <option value="1">Less than high school</option>
                                 <option value="2">High School</option>
                                 <option value="3">University Degree</option>
@@ -235,8 +239,8 @@
                             <br>
                             <label for="Orientation">Your Sexual Orientation:</label>
                             <br>
-                            <select name="Orientation" id="orientation" value="5">
-                                <option selected value="5">Please Make A Selection:</option>
+                            <select name="Orientation" id="orientation">
+                                <option selected value="1">Please Make A Selection:</option>
                                 <option value="1">Heterosexual</option>
                                 <option value="2">Bisexual</option>
                                 <option value="3">Homosexual</option>
@@ -253,8 +257,8 @@
                             <br>
                             <label for="race">Your Race:</label>
                             <br>
-                            <select name="race" id="race" value="5">
-                                <option selected value="5">Please Make A Selection:</option>
+                            <select name="race" id="race">
+                                <option selected value="4">Please Make A Selection:</option>
                                 <option value="1">Asian</option>
                                 <option value="2">Arab</option>
                                 <option value="3">Black</option>
@@ -271,8 +275,8 @@
                             <br>
                             <label for="voted">Have You Voted?</label>
                             <br>
-                            <select name="voted" id="voted" value="1">
-                                <option selected value="1">Please Make A Selection:</option>
+                            <select name="voted" id="voted">
+                                <option selected value="2">Please Make A Selection:</option>
                                 <option value="1">Yes</option>
                                 <option value="2">No</option>
                             </select>
@@ -296,25 +300,17 @@
                     </div>
                     <br></br>
 
-                            
-                    
-
-                    <!--Result Image display-->
-                    <!-- <br></br>
-                    <div class="col-md-3">
-                        <div id="polaroid" class="polaroid">
-                            <img id="aliens" src="../static/images/aliens.gif">
-                            <div class="container">
-                                <h2 id="prediction"></h2>
-                            </div>
-                        </div> 
-                    </div>
-                    <br></br> -->
                 
-                    <!-- predition buttons-->
+                    <!-- predition buttons and output-->
+                    <br></br>
                     <br></br>
                     <div class="col-sm-3">
                         <button onclick="make_pred()" class='btn btn-info'>CLICK TO Calculate</button>
+                        <br></br>
+                        <div class="col-sm-3">
+                            <h1 id="prediction"></h1>
+                            <img id="dummy" src="..">
+                        </div>
                     </div>
             </div>
         <br><br>

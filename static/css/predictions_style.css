@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(27, 27, 27);
   color: white;
   font-family: Arial, sans-serif;
   padding: 10px;
@@ -21,15 +21,11 @@ h2 {
 
 .jumbotron {
   background: 
-  linear-gradient(
-    rgba(0, 0, 250, 0.25), 
-    rgba(255, 255, 255, 0.45)
-  ),
   url("../images/galaxy-1.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 400px;
+  height: 300px;
 }
 
 .btn{
