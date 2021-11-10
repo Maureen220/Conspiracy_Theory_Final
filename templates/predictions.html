@@ -34,7 +34,7 @@
                             <br>
                             <label for="age">Your Age:</label>
                             <br>
-                            <select id="age" name="age" value="13">
+                            <select id="age" name="age">
                                 <option selected value="19">Please Make A Selection:</option>
                                 <option value="13">13</option>
                                 <option value="14">14</option>
@@ -115,7 +115,7 @@
                             <br>
                             <label for="religion">Your Religion:</label>
                             <br>
-                            <select name="religion" id="religion" value="1">
+                            <select name="religion" id="religion">
                                 <option selected value="12">Please Make A Selection:</option>
                                 <option value="1">Agnostic</option>
                                 <option value="2">Atheist</option>
@@ -138,15 +138,29 @@
                     <div class="col-sm-3">
                         <div class="form-input" id="family_size_input">
                             <br>
-                            <label for="family_size">Family Size:</label>
+                            <label for="family_size">Sibling Amount (Including Yourself):</label>
                             <br>
-                            <select name="fam_size" id="fam_size" value="1">
+                            <select name="fam_size" id="fam_size">
                                 <option value="4">Please Make A Selection:</option>
-                                <option value="1">One Child</option>
-                                <option value="2">Two Child</option>
-                                <option value="3">Three Child</option>
-                                <option value="4">Four Child</option>
-                                <option value="5">Five Child</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                                <option value="6">Six</option>
+                                <option value="7">Seven</option>
+                                <option value="8">Eight</option>
+                                <option value="9">Nine</option>
+                                <option value="10">Ten</option>
+                                <option value="11">Eleven</option>
+                                <option value="12">Twelve</option>
+                                <option value="13">Thirteen</option>
+                                <option value="14">Fourteen</option>
+                                <option value="15">Fifteen</option>
+                                <option value="16">Sixteen</option>
+                                <option value="17">Seventeen</option>
+                                <option value="18">Eighteen</option>
+                                <option value="19">Nineteen</option>
                             </select>
                         </div>  
                     </div>
@@ -208,7 +222,7 @@
                             <br>
                             <label for="engant">English as a Native Language:</label>
                             <br>
-                            <select name="engnat" id="engant" value="1">
+                            <select name="engnat" id="engant">
                                 <option selected value="1">Please Make A Selection:</option>
                                 <option value="1">Yes</option>
                                 <option value="2">No</option>
@@ -223,7 +237,7 @@
                             <br>
                             <label for="Hand">Your Hand Orientation:</label>
                             <br>
-                            <select name="hand_orientation" id="hand_orientation" value="1">
+                            <select name="hand_orientation" id="hand_orientation">
                                 <option selected value="1">Please Make A Selection:</option>
                                 <option value="1">Right</option>
                                 <option value="2">Left</option>
@@ -262,7 +276,7 @@
                                 <option value="1">Asian</option>
                                 <option value="2">Arab</option>
                                 <option value="3">Black</option>
-                                <option value="4">Indigenous Australian/Native America/White</option>
+                                <option value="4">White</option>
                                 <option value="5">Other</option>
                             </select>
                         </div>
@@ -304,17 +318,41 @@
                     <!-- predition buttons and output-->
                     <br></br>
                     <br></br>
-                    <div class="col-sm-3">
+
+                    <div class="col-md-12">
                         <button onclick="make_pred()" class='btn btn-info'>CLICK TO Calculate</button>
                         <br></br>
-                        <div class="col-sm-3">
+                        <div class="col-md-12">
                             <h1 id="prediction"></h1>
-                            <img id="dummy" src="..">
+                            <img id="dummy" src="../static/images/liar_liar.gif">
                         </div>
                     </div>
             </div>
         <br><br>
         </div>
+
+        <!--result descriptions-->
+        <div class="jumbotron2">
+            <div class='col-md-12'>
+                <br>
+                <h1>Description of Results:</h1>
+                    <li>Government Malfeasance: You might believe in the malicious intent of the government! Pay your taxes (or don't)...</li>
+                    <br>
+                    <li>Malevolent Global Conspiracies: You might believe that world as we observe it is a hoax.</li>
+                    <br>
+                    <li>Extraterrestrial Cover Up: You might believe that aliens have already been to earth. The truth is out there!</li>
+                    <br>
+                    <li>Control of Information: You might believe that the media is biased and untruthful.</li>
+                    <br>
+                    <li>Personal Wellbeing: You might believe that organizations are actively seeking to control your mind and spread diseases.</li>
+                    <br>
+                    <li>You got a combination of the above: You believe in more than one. Congrats?? </li>
+                    <br>
+                    <li>Not: You are a skeptic to conspiracies. At least for now... </li>
+                    <br>
+            </div>
+        </div>
+        <br><br>
 
 
     <h3 id="learn">Would you like to learn more about the (GCB) Generic Conspiracisy Beliefs Scale?</h3>

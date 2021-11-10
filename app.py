@@ -28,7 +28,7 @@ def predict():
             voted: voted,
             married: married
 """
-        model= joblib.load('random_forest.joblib')
+        model= joblib.load('random_forest_4.joblib')
         
         age=request.json.get("age")
         religion=request.json.get("religion")

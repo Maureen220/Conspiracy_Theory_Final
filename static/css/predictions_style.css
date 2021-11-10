@@ -28,6 +28,13 @@ h2 {
   height: 300px;
 }
 
+.jumbotron2 {
+  background-color: rgba(200, 54, 54, .5);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
 .btn{
     background-color: rgba(0, 0, 250, 0.25);
     display: inline-block;

@@ -53,30 +53,25 @@ function make_pred(){
         document.getElementById("prediction").innerHTML=resp.Prediction
         console.log(resp.Prediction);
         if (resp.Prediction=="Not"){
-            // alert(document.getElementById("dummy").src);
-            document.getElementById("dummy").src= "/static/images/scully.gif"
-            
-        
+            document.getElementById("dummy").src= "/static/images/scully.gif" 
         }
-        else if (resp.Prediction=="GM"){
+        else if (resp.Prediction=="Government Malfeasance"){
+            document.getElementById("dummy").src="/static/images/washington.gif"
+        }
+        else if (resp.Prediction=="Malevolent Global Conspiracy"){
+            document.getElementById("dummy").src="/static/images/theyre_watching.gif"
+        }
+        else if (resp.Prediction=="Extraterrestrial Cover-up"){
             document.getElementById("dummy").src="/static/images/aliens.gif"
         }
-
-        else if (resp.Prediction=="GM"){
-            document.getElementById("dummy").src="/static/images/alien.gif"
+        else if (resp.Prediction=="Personal Well-being"){
+            document.getElementById("dummy").src="/static/images/mind_control.gif"
         }
-
-        else if (resp.Prediction=="GM"){
-            document.getElementById("dummy").src="/static/images/alien.gif"
+        else if (resp.Prediction=="Control of Information"){
+            document.getElementById("dummy").src="/static/images/simpsons.gif"
         }
-
-        else if (resp.Prediction=="GM"){
-            document.getElementById("dummy").src="/static/images/alien.gif"
+        else if (resp.Prediction){
+            document.getElementById("dummy").src="/static/images/jackets.gif"
         }
-
-        else if (resp.Prediction=="GM"){
-            document.getElementById("dummy").src="/static/images/alien.gif"
-        }
-
     })
 }
