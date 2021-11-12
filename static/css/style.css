@@ -2,7 +2,9 @@ body {
   background-color: rgb(39, 39, 39);
   color: white;
   font-family: Arial, sans-serif;
-  padding: 5px;
+  padding: 2px;
+  position: absolute;
+
 }
 
 a {
@@ -48,12 +50,12 @@ p {
   font-size: 10px;
   background-repeat: no-repeat;
   background-size: cover;
+  
 } 
 
 .tableauPlaceholder {
   padding-left: .5%;
   position: relative;
-
 }
 
 

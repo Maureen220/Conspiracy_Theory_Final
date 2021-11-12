@@ -14,7 +14,8 @@
 </head>
 
 
-<body>   
+<body>  
+    <div class='container-fluid'>
         <div class="jumbotron specialjum">
             <h1 class="display-1" >Are you a Conspiracy Theorist?</h1>
             <p class="lead">Determining an outcome through the use of machine learning</p>
@@ -22,10 +23,12 @@
             <a href='/predict' class='button'>PREDICT YOURSELF</a>
             
         </div>
+    
+
 
         <div class="row">
             <!--Background Info Block-->
-            <div id="description" class="col-sm-6">
+            <div id="description" class="col-md-6">
                 <br></br>
                 <a> Background of Data:</a><br><br>
                 <ul>
@@ -40,7 +43,7 @@
             </div>
 
             <!-- Google slideshow - responsive elements in CSS -->
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <br><br>
                 <div class="responsive-google-slides">
                   <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTdHJkogkY0tkdhV5SOKJmvHHzPQuNlN87-csbSyKG60HBrvzUO13uedlbzxgoCYOaXXlT9pBVvUh5g/embed?start=false&loop=false&delayms=3000" 
@@ -89,38 +92,42 @@
                 <br>
 
                 <!--Description of graph elements-->
-                <div class="col-sm-5" >
+                <div class="col-md-4" >
                     <h3>Scores Based on Religion and Scores Based on Gender:</h3> 
                             <br>
                             <p>
-                                The first chart below shows the average scores of each conspiracy theory for each type of religion. 
+                                The first chart shows the average scores of each conspiracy theory for each type of religion. 
                                 The size of the bubbles indicate how many of the respondents identified with that particular religion. 
                                 The scale was based on the average scores for each conspiracy theory as well as the overall scores.
                             </p>
                             <p>
-                                In the second chart below, the averages based on gender identification can be observed. 
+                                In the second chart, the averages based on gender identification can be observed. 
                                 Overall, women and other have a higher overall rating as conspiracy theorists in comparison to men. 
                             </p>
                 </div>
             </div>
             <br><br><br>
+    
+        <!--Link to our github-->
+        <div class="row">
+            <div class="col-md-6">
+                <p style='padding-left:1px'>Brought to you by Team Lizard People</p>
+                        <img src="../static/images/team_lp.gif" style="height:220px ; width:368px" />
+                        <br><br>
+                <a style='font-size:20px' href="https://github.com/karengut97/Conspiracy_Theory_Final">Click here to view our code on GitHub!</a>
+                <br><br>
+            </div>
+        </div>
 
-    <!--Link to our github-->
-    <p style='padding-left:1px'>Brought to you by Team Lizard People</p>
-            <img src="../static/images/team_lp.gif" style="height:220px ; width:368px" />
-            <br><br>
-    <a style='font-size:20px' href="https://github.com/karengut97/Conspiracy_Theory_Final">Click here to view our code on GitHub!</a>
-    <br><br>
 
-
-    <!-- Link to JS file, d3, and plotly-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js” integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo” crossorigin=“anonymous”></script>
-    <script src=“https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js” integrity=“sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM” crossorigin=“anonymous”></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="../static/js/app.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
+        <!-- Link to JS file, d3, and plotly-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js” integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo” crossorigin=“anonymous”></script>
+        <script src=“https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js” integrity=“sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM” crossorigin=“anonymous”></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="../static/js/app.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </div>
 </body>
 
 </html>
