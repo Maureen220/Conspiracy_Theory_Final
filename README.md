@@ -61,21 +61,21 @@ Other characteristics of the respondants were also captured:
     - Age: One individual indicated they were nearly 35,000 years old while another was over 5,000 years old
     - Family Size: One individual stated their mother had nearly 100 children
 
-<img  src="images/Age_boxplot.png" width="400" height="400"/> <img src="images/Family_size_boxplot.png" width="400" height="400"/> 
+<img  src="static/images/Age_boxplot.png" width="400" height="400"/> <img src="static/images/Family_size_boxplot.png" width="400" height="400"/> 
 ## Analysis 
 In reviewing the various factors from the people who took the survey, we decided it would be useful to look at a correlation matrix. We quickly realized a majority of the factors do not have a correlation at all with the overall total scores. The following correlation matrix shows **Religion** and **Gender** having the most correlation to total scores, though small.
 
-<img  src="images/Correlation_matrix_1.png"/>
+<img  src="static/images/Correlation_matrix_1.png"/>
 
 ### RELIGION
 These charts show the average scores of each conspiracy theory for each type of religion. The size of the bubbles indicate how many of the respondents identified with that particular religion. The scale was based on the average scores for each conspiracy theory as well as the overall scores.
 
-<img  src="images/Religion.png"/>
+<img  src="static/images/Religion.png"/>
 
 ### GENDER
 Males were far less likely to believe in conspiracy theories than those who identified as Female or Other.
 <p align="center">
-<img  src="images/Gender.png" width="1000" height="140"/>
+<img  src="static/images/Gender.png" width="1000" height="140"/>
 </p>
 
 ### ERD
@@ -84,7 +84,7 @@ Our database contains a main table (total_scores) which captures the features of
 * Mitigating redundant data in child tables
 * Preserving data integrity by having the features of each person stored once
 
-<img  src="images/ERD.png"/>
+<img  src="static/images/ERD.png"/>
 
 ## Google Slide Presentation Link
 [The Lizard People](https://docs.google.com/presentation/d/1Yfqv1jFfF3fEBV6npjox3hcjP84kX47o3FywaWDZ9HI/edit#slide=id.gf9adcef9b2_0_124)
