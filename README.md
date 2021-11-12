@@ -73,7 +73,7 @@ These charts show the average scores of each conspiracy theory for each type of 
 <img  src="images/Religion.png"/>
 
 ### GENDER
-For the purposes of displaying the data, "Other" was removed as their scores were nominal. Comparing Male to Female, the numbers are similar though not identical. Males led in three theories while Females led in two.
+Males were far less likely to believe in conspiracy theories than those who identified as Female or Other.
 <p align="center">
 <img  src="images/Gender.png" width="1000" height="140"/>
 </p>
