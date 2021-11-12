@@ -52,7 +52,7 @@ function make_pred(){
         console.log(resp)
         document.getElementById("prediction").innerHTML=resp.Prediction
         console.log(resp.Prediction);
-        if (resp.Prediction=="Not"){
+        if (resp.Prediction=="Not a Conspiracy Theorist"){
             document.getElementById("dummy").src= "/static/images/scully.gif" 
         }
         else if (resp.Prediction=="Government Malfeasance"){
