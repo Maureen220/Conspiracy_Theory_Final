@@ -70,7 +70,7 @@ In reviewing the various factors from the people who took the survey, we decided
 ### RELIGION
 These charts show the average scores of each conspiracy theory for each type of religion. The size of the bubbles indicate how many of the respondents identified with that particular religion. The scale was based on the average scores for each conspiracy theory as well as the overall scores.
 
-<img  src="static/images/Religion.png"/>
+<img  src="static/images/Religion1.png"/>
 
 ### GENDER
 Males were far less likely to believe in conspiracy theories than those who identified as Female or Other.
