@@ -75,7 +75,7 @@ These charts show the average scores of each conspiracy theory for each type of 
 ### GENDER
 Males were far less likely to believe in conspiracy theories than those who identified as Female or Other.
 <p align="center">
-<img  src="static/images/Gender.png" width="1000" height="140"/>
+<img  src="static/images/NewGender.png" width="1000" height="500"/>
 </p>
 
 ### ERD
