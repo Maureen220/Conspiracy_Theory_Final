@@ -91,3 +91,26 @@ p {
     height: 100% !important;
   }
 
+.wrapper
+{
+  padding-bottom: 20px;
+}
+
+.divider
+{
+  position: relative;
+  margin-top: 10px;
+  height: 1px;
+}
+
+.div-transparent:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2%;
+  right: 2%;
+  width: 95%;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent);
+}
