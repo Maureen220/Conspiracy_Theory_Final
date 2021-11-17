@@ -1,8 +1,6 @@
 # Conspiracy_Theory_Final
 A machine learning model about conspiracy theory beliefs based upon characterization of the individual.
 
-[Try Your Luck](https://conspiracypredictor.herokuapp.com/)
-
 <a href="https://conspiracypredictor.herokuapp.com/" target="_blank">Try Your Luck</a>
 
 ## Why Conspiracies?
